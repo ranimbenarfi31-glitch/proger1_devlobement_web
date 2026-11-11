@@ -27,7 +27,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.logo img{
+  width: 150px;
+  height: auto;
 
+}
 .logo h1 {
   color: white;
   font-size: 30px;
@@ -289,15 +293,15 @@ footer {
 @media screen and (max-width: 992px) {
 
   .menu-container {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .hero-content h2 {
-      font-size: 38px;
+    font-size: 38px;
   }
 
   .hero-image img {
-      height: 300px;
+    height: 300px;
   }
 
 }
@@ -308,42 +312,42 @@ footer {
 @media screen and (max-width: 600px) {
 
   .navbar {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .nav-links {
-      gap: 15px;
-      flex-wrap: wrap;
-      justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .hero {
-      flex-direction: column;
-      text-align: center;
-      padding: 40px 5%;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 5%;
   }
 
   .hero-content h2 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .hero-image img {
-      height: 250px;
+    height: 250px;
   }
 
   .menu-container {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .section-title h2 {
-      font-size: 32px;
+    font-size: 32px;
   }
 
   .footer-content {
-      flex-direction: column;
-      text-align: center;
-      align-items: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 
 }
@@ -351,7 +355,6 @@ footer {
 
 /* sarveur */
 
-/* ORDER PAGE */
 
 .order {
   max-width: 850px;
@@ -428,7 +431,7 @@ footer {
 /* PHONE */
 @media (max-width: 600px) {
   .order {
-      margin: 25px 5%;
-      padding: 25px 18px;
+    margin: 25px 5%;
+    padding: 25px 18px;
   }
 }
