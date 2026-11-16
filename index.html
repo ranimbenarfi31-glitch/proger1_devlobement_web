@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>TastyBite - Restaurant</title>
-
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- HEADER -->
-    <header>
-      <nav class="navbar">
-        <div class="logo">
-          <img
-            src="images/Logo gourmand TastyBite chaleureux et coloré.png"
-            alt="logo"
-          />
-          <!-- <h1>Tasty<span>Bite</span></h1> -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TastyBite - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="index.html"><img src="images/Logo.png" alt="Logo TastyBite"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuNav">
+          <ul class="navbar-nav ms-auto nav-links">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Order</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
         </div>
+      </div>
+    </nav>
+  </header>
 
-        <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-
-        <div class="nav-icons">
-          <span>🔍</span>
-          <span>🛒</span>
-        </div>
-      </nav>
-    </header>
-    <!-- HOME SECTION -->
+  <main>
     <section class="hero" id="home">
-      <div class="hero-content">
-        <h2>
-          The Taste of Happiness
-          <br />
-          In Every Bite!
-        </h2>
-
-        <p>
-          Delicious food, fresh ingredients and unforgettable flavors. Welcome
-          to TastyBite!
-        </p>
-
-        <a href="menu.html" class="btn">Explore Menu</a>
-      </div>
-
-      <div class="hero-image">
-        <img src="images/pizza1.jpeg" alt="Delicious Pizza" />
+      <div class="container hero-flex">
+        <div class="hero-content">
+          <h1>The Taste of Happiness <br>In Every Bite!</h1>
+          <p>Delicious food, fresh ingredients and unforgettable flavors. Welcome to TastyBite!</p>
+          <a href="menu.html" class="btn btn-gold">Explore Menu</a>
+        </div>
+        <div class="hero-image">
+          <img src="images/pizza1.jpeg" alt="Delicious Pizza">
+        </div>
       </div>
     </section>
 
-    <!-- ABOUT SECTION -->
+    <section class="menu">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our <span>Specialties</span></h2>
+          <p>A taste of what we offer</p>
+        </div>
+        <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <article class="food-card">
+            <img src="images/pizza.jpeg" alt="Pizza">
+            <div class="food-info">
+              <h3>Pizza</h3>
+              <p>Delicious pizza with fresh ingredients and cheese.</p>
+              <h4>$12.00</h4>
+              <a href="order.html?food=Pizza" class="btn btn-gold">Order Now</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <article class="food-card">
+            <img src="images/tacos.jpeg" alt="Tacos">
+            <div class="food-info">
+              <h3>Tacos</h3>
+              <p>Tasty tacos filled with delicious ingredients.</p>
+              <h4>$10.00</h4>
+              <a href="order.html?food=Tacos" class="btn btn-gold">Order Now</a>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-4">
+          <article class="food-card">
+            <img src="images/cake.jpeg" alt="Cake">
+            <div class="food-info">
+              <h3>Cake</h3>
+              <p>Sweet chocolate cake with a delicious taste.</p>
+              <h4>$8.00</h4>
+              <a href="order.html?food=Cake" class="btn btn-gold">Order Now</a>
+            </div>
+          </article>
+        </div>
+
+        </div>
+      </div>
+    </section>
+
     <section class="about" id="about">
-      <h2>About <span>Us</span></h2>
-
-      <p>
-        Welcome to TastyBite! We offer delicious food, fresh ingredients and
-        excellent service.
-      </p>
-    </section>
-    <!-- footer -->
-    <footer id="contact">
-      <div class="footer-content">
-        <div class="footer-logo">
-          <h2>Tasty<span>Bite</span></h2>
-
-          <p>Good Food, Good Mood!</p>
-        </div>
-        <div>
-          <a href="tel:+21629023776"> 📞 29023776 </a>
-        </div>
-        <div class="social">
-          <h3>Follow Us</h3>
-
-          <p>Facebook</p>
-          <p>Instagram</p>
-          <p>TikTok</p>
-        </div>
+      <div class="container">
+        <h2>About <span>Us</span></h2>
+        <p>Welcome to TastyBite! We offer delicious food, fresh ingredients and excellent service.</p>
+        <aside class="alert alert-warning mt-4">Order online in a few clicks from our <a href="order.html">order page</a>.</aside>
       </div>
-
-      <p class="copyright">© 2026 TastyBite. All Rights Reserved.</p>
-    </footer>
-  </body>
+    </section>
+  </main>
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-logo">
+        <h2>Tasty<span>Bite</span></h2>
+        <p>Good Food, Good Mood!</p>
+      </div>
+      <div class="contact-info">
+        <h3>Contact</h3>
+        <a href="tel:+21629023776">&#128222; 29023776</a>
+        <a href="contact.html">Contact page</a>
+      </div>
+      <div class="social">
+        <h3>Follow Us</h3>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://tiktok.com" target="_blank">TikTok</a>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 TastyBite. All Rights Reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
